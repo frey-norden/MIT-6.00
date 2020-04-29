@@ -51,3 +51,25 @@ s2 = 'hijklmn'
 print(s1 + s2)
 
 print(s1)
+print(s1[0])
+print(s1[3])
+print(s1[-1])
+print(s1[2:4])
+# up to but not including 5 for example
+print(s1[:5])
+print(s1[3:])
+
+# searching chars w find() func
+print(s1.find('cde'))
+print('\n')
+print('now string comparisons')
+print(s1 == s1)
+print(s1 == s2)
+print(s1 < s2)
+print(s1 > s2)
+
+print('\n')
+sumDigits = 0
+for c in str(1952):
+    sumDigits += int(c)
+print(sumDigits)
