@@ -3,8 +3,7 @@
 # Problem Set 1
 # Name: Frey Norden
 # Collaborators: -
-# Time:
-
+# Time: 1:30
 
 def primeTest(n):
     for i in range(2,n):
@@ -12,12 +11,10 @@ def primeTest(n):
             return False
     return True
 
-
 n = input('Enter number for nth prime: ')
 n = int(n)
-#print(primeTest(n))
-#n = 999
-x = 10000
+
+x = (n * 10)
 oddints = []
 primeints = []
 
