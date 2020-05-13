@@ -8,19 +8,16 @@ def solve2(numLegs, numHeads):
             numPigs = numHeads - numChicks - numSpiders
             totlegs = 4*numPigs + 2*numChicks + 8*numSpiders
             if totLegs == numLegs:
-                print('Number of pigs:' + str(numPigs) + ',',)
-                print('Number of chickens:' + str(numChicks) + ',',)
-                print('Number of spiders:', numSpiders)
+                return [numPigs, numChicks, numSpiders]
                 solutionFound = True
-    if not solutionFound: print('There is no solution.')
+    if not solutionFound: return [None, None, None]
 
 def barnYard():
     heads = int(input('Enter number of heads: '))
     legs = int(input('Enter number of legs: '))
-    return [legs, heads]
 
 def main():
-    barnYard()
+    solve2(numLegs, numHeads)
 
 if __name__ == '__main__':
     main()
