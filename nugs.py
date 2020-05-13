@@ -1,3 +1,7 @@
+# Name: Frey Norden
+# Collaborators: -
+# Time: 1:30
+# returns solutions to number of 6,9,20 piece mcNuggets that equal totals in range 50 t0 100
 
 def mcNuggets(a, b, c, total):
     solutions = list()
