@@ -14,19 +14,13 @@ def solve2(numLegs, numHeads):
                 solutionFound = True
     if not solutionFound: print('There is no solution.')
 
-def barnYard1():
+def barnYard():
     heads = int(input('Enter number of heads: '))
     legs = int(input('Enter number of legs: '))
-    pigs, chickens, spiders = solve2(legs, heads)
-    if pigs == None:
-        print('There is no solution')
-    else:
-        print('Number of pigs:', pigs)
-        print('Number of chickens:', chickens)
-        print('Number of spiders:', spiders)
+    return [legs, heads]
 
 def main():
-    barnYard1()
+    barnYard()
 
 if __name__ == '__main__':
     main()
