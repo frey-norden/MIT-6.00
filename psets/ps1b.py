@@ -39,7 +39,6 @@ for i in oddints:
         primeints.append(i)
 
 sum = 0
-
 for j in primeints[:n-1]:
     sum += math.log(j)
     ratio = sum/j
