@@ -4,16 +4,14 @@
 # returns solutions to number of 6,9,20 piece mcNuggets that equal totals in range 50 t0 100
 
 def mcNuggets(a, b, c, total):
-    solutions = dict()
     solutionFound = False
     x = 6*a + 9*b + 20*c
     if x == total:
-        #print('solution',[a, b, c], total)
+        #print(total, [a, b, c], 'solution')
         solutionFound = True
-        if solutionFound == True:
-            solutions[total] = solutions.get(total, 0) + 1
+    if solutionFound == True:
+        print(total, [a, b, c], 'solution')    
 
-    print(solutions)
 
 def cashier():
     u = int(input('Enter upper limit of nuggets: '))
